@@ -7,7 +7,7 @@ MEMCARD_PATH = "/home/pi/RetroPie/roms/psx/pcsx-card2.mcr"
 MEMCARD_BACKUP = "/home/pi/RetroPie/roms/psx/backup"
 
 def dump_card():
-    subprocess.run([MEMCARD_TOOL, "dump", "ps1card.mcr"], check=True)
+    subprocess.run([MEMCARD_TOOL, "dump", "pcsx-card2.mcr"], check=True)
     shutil.copy("pcsx-card2.mcr", MEMCARD_PATH)
     print(f"Playstation memory card dumped and copied to: {MEMCARD_PATH}")
 
